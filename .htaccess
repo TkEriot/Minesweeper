@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9]{40})$ play.php?auth=$1 [L,QSA]
+ErrorDocument 404 index.php
+Options -Indexes
